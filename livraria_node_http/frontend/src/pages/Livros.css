@@ -1,0 +1,43 @@
+:root {
+    --text: #666666;
+    --card-bg: #F8F4E3;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"] {
+    --text: #F8F4E3;
+    --card-bg: #181818;
+    --shadow-color: rgba(0, 0, 0, 0.8);
+}
+
+.livros-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.livros-header h1 {
+    margin: 0;
+    color: var(--text);
+}
+
+.livros-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    background: var(--card-bg);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px var(--shadow-color);
+}
+
+.empty-state p {
+    color: var(--text);
+    font-size: 18px;
+    margin-bottom: 20px;
+}
